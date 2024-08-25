@@ -1,0 +1,105 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Muhammad Hafidz Amanullah Abyan",
+    "email": "abyan@gmail.com",
+    "password": "abyan",
+    "confPassword": "abyan",
+    "role": "user"
+}
+
+###
+// get ALL Users
+GET http://localhost:5000/users
+
+###
+// Get Single User
+GET http://localhost:5000/users/770b5927-eb03-46c9-888a-817a6b9e9886
+
+###
+//Update User
+PATCH http://localhost:5000/users/6b33a331-75ef-4b27-a068-ab82868d88f8
+Content-Type: application/json
+
+{
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678",
+    "role": "admin"
+}
+
+###
+//Delete User
+DELETE http://localhost:5000/users/c7c18345-0c69-41f4-be5e-6deb6e332c53
+
+###
+//Login User 
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
+
+###
+//Get All Attendance 
+GET http://localhost:5000/attendance
+
+
+###
+//Get Single Attendance
+GET http://localhost:5000/attendance/373bd94d-4870-4a7c-96d4-fdbfae7875a2
+
+
+###
+//POST Data Attendance
+POST http://localhost:5000/attendance
+Content-Type: application/json
+
+{
+    "name": "Muhammad Hafidz Amanullah Abyan",
+    "date": "2024-08-22",
+    "check_in_time": "07:00:00",
+    "check_out_time": "16:00:00",
+    "image": "andre.png",
+    "role": "HRD"
+}
+
+
+###
+//Update Data Attendance
+PATCH http://localhost:5000/attendance/01d3b1d2-612b-4188-84b6-8c19a62f1fee
+Content-Type: application/json
+
+{
+    "name": "Muhammad Hafidz Amanullah Abyan UPDATED",
+    "email": "admin@gmail.com",
+    "date": "2024-08-22",
+    "check_in_time": "07:00:00",
+    "check_out_time": "16:00:00",
+    "location": "Home",
+    "status": "Hadir",
+    "description": "Hadir Tepat Waktu",
+    "image": "andre.png",
+    "role": "HRD"
+}
+
+###
+//Delete Attendance
+DELETE http://localhost:5000/attendance/373bd94d-4870-4a7c-96d4-fdbfae7875a2
+
+
+
+
+
+
+
