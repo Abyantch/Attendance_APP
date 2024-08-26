@@ -1,4 +1,10 @@
 # Attendance_APP
 
-Username : admin@gmail.com
-Pass : 12345678
+#Backend 
+nodemon index
+
+#Frontend
+npm start
+
+username : admin@gmail.com 
+password : 12345678
